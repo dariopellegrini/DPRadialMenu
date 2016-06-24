@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DPRadialMenu_Example' do
+  pod 'DPRadialMenu', :path => '../'
+
+  target 'DPRadialMenu_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
