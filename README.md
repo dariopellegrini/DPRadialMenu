@@ -7,7 +7,8 @@
 
 Radial menu written in Objective-C
 
-![](screen1.png)
+![alt tag](https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/screen/screen1.png)
+![alt tag](https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/screen/screen2.png)
 
 ## Example
 
