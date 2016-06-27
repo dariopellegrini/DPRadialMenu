@@ -125,6 +125,7 @@
             [self.firstButton setTitle:button.titleLabel.text forState:UIControlStateNormal];
             [self.firstButton setImage:button.imageView.image forState:UIControlStateNormal];
             self.firstButton.backgroundColor = button.backgroundColor;
+            self.firstButton.tag = button.tag;
         }
         else if (i == 1) {
             if (!CGRectIsEmpty(button.frame)) {
@@ -133,6 +134,7 @@
             [self.secondButton setTitle:button.titleLabel.text forState:UIControlStateNormal];
             [self.secondButton setImage:button.imageView.image forState:UIControlStateNormal];
             self.secondButton.backgroundColor = button.backgroundColor;
+            self.secondButton.tag = button.tag;
         }
         else if (i == 2) {
             if (!CGRectIsEmpty(button.frame)) {
@@ -141,6 +143,7 @@
             [self.thirdButton setTitle:button.titleLabel.text forState:UIControlStateNormal];
             [self.thirdButton setImage:button.imageView.image forState:UIControlStateNormal];
             self.thirdButton.backgroundColor = button.backgroundColor;
+            self.thirdButton.tag = button.tag;
         }
     }
 }
