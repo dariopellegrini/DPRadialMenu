@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/DPRadialMenu.svg?style=flat)](http://cocoapods.org/pods/DPRadialMenu)
 [![Platform](https://img.shields.io/cocoapods/p/DPRadialMenu.svg?style=flat)](http://cocoapods.org/pods/DPRadialMenu)
 
+Radial menu written in Objective-C
+
+![](screen1.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
