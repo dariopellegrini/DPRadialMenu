@@ -42,8 +42,20 @@
     [b6 setImage:[UIImage imageNamed:@"linked_in"] forState:UIControlStateNormal];
     
     [radialMenu configureWithButtons:@[b1, b2, b3] view:self.view delegate:self];
+    radialMenu.displayBackgroundView = YES;
+    radialMenu.animationTime = 0.5;
     
     [radialMenuSmall configureWithButtons:@[b4, b5, b6] view:self.redView delegate:self];
+    
+    // The color of the fade view on the background. Default is black with alpha 0.7
+    radialMenuSmall.radialMenuContainer.backgroundColor = [UIColor blueColor];
+    
+    /*
+     The action region of the menu: the region in which the menu is active and from which it cinfigure its position.
+     Default is the view passed in the constructor.
+     In this case the action view is the view of the controller, in order to have a nice behavior on the whole screen.
+     */
+    radialMenuSmall.actionView = self.view;
 }
 
 - (void)didReceiveMemoryWarning

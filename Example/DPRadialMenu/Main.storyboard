@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOS-aP-CyG">
-                                <rect key="frame" x="178" y="178" width="244" height="244"/>
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long press here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA7-lm-9x5">
-                                        <rect key="frame" x="54" y="110" width="137" height="23"/>
+                                        <rect key="frame" x="57" y="113" width="137" height="23"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -31,7 +31,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.01026766514" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="244" id="Vat-to-fLd"/>
+                                    <constraint firstAttribute="height" constant="250" id="Vat-to-fLd"/>
                                     <constraint firstAttribute="width" secondItem="wOS-aP-CyG" secondAttribute="height" multiplier="1:1" id="lpq-2g-kwy"/>
                                     <constraint firstItem="jA7-lm-9x5" firstAttribute="centerY" secondItem="wOS-aP-CyG" secondAttribute="centerY" id="tSy-nd-GtF"/>
                                     <constraint firstItem="jA7-lm-9x5" firstAttribute="centerX" secondItem="wOS-aP-CyG" secondAttribute="centerX" id="zbh-mH-tVb"/>

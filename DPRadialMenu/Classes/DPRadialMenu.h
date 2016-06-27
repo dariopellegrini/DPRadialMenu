@@ -9,13 +9,17 @@
 #import "DPRadialMenuDelegate.h"
 
 @interface DPRadialMenu : UIView
-
 @property (strong, nonatomic) UIView *anchorView;
 @property (strong, nonatomic) UIButton *firstButton;
 @property (strong, nonatomic) UIButton *secondButton;
 @property (strong, nonatomic) UIButton *thirdButton;
+@property (strong, nonatomic) UIView *radialMenuContainer;
 
 @property (nonatomic, strong) NSObject <DPRadialMenuDelegate> *delegate;
+
+@property (assign, nonatomic) BOOL displayBackgroundView;
+@property (assign, nonatomic) CGFloat animationTime;
+@property (strong, nonatomic) UIView *actionView;
 
 - (void)configureWithButtons:(NSArray *) buttons view:(UIView *)view delegate:(NSObject <DPRadialMenuDelegate> *) delegate;
 - (void)configureButtons:(NSArray *) buttons;

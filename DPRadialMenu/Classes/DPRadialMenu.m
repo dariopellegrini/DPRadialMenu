@@ -10,8 +10,8 @@
 
 @interface DPRadialMenu ()
 @property (nonatomic, strong) UIButton *selectedButton;
-@property (strong, nonatomic) IBOutlet UIView *radialMenuContainer;
 @property (nonatomic, strong) NSArray *buttons;
+@property (nonatomic, assign) CGPoint pointOfView;
 @end
 
 @implementation DPRadialMenu
@@ -71,6 +71,9 @@
     self.thirdButton.layer.borderColor = [[UIColor whiteColor] CGColor];
     self.thirdButton.layer.cornerRadius = self.firstButton.bounds.size.width / 2;
     self.thirdButton.alpha = 0.0;
+    
+    self.displayBackgroundView = YES;
+    self.animationTime = 0.25;
 }
 
 - (id)init {
@@ -116,16 +119,25 @@
     for (NSInteger i = 0; i < self.buttons.count; i++) {
         UIButton *button = (UIButton*)[buttons objectAtIndex:i];
         if (i == 0) {
+            if (!CGRectIsEmpty(button.frame)) {
+//                self.firstButton.frame = button.frame;
+            }
             [self.firstButton setTitle:button.titleLabel.text forState:UIControlStateNormal];
             [self.firstButton setImage:button.imageView.image forState:UIControlStateNormal];
             self.firstButton.backgroundColor = button.backgroundColor;
         }
         else if (i == 1) {
+            if (!CGRectIsEmpty(button.frame)) {
+//                self.secondButton.frame = button.frame;
+            }
             [self.secondButton setTitle:button.titleLabel.text forState:UIControlStateNormal];
             [self.secondButton setImage:button.imageView.image forState:UIControlStateNormal];
             self.secondButton.backgroundColor = button.backgroundColor;
         }
         else if (i == 2) {
+            if (!CGRectIsEmpty(button.frame)) {
+//                self.thirdButton.frame = button.frame;
+            }
             [self.thirdButton setTitle:button.titleLabel.text forState:UIControlStateNormal];
             [self.thirdButton setImage:button.imageView.image forState:UIControlStateNormal];
             self.thirdButton.backgroundColor = button.backgroundColor;
@@ -163,6 +175,9 @@
 }
 
 - (void) longPressAction: (UILongPressGestureRecognizer *)gesture {
+    if (self.actionView) {
+        self.pointOfView = [gesture locationInView:self.actionView];
+    }
     [self handleLongPress:gesture point:[gesture locationInView:self.radialMenuContainer.superview]];
 }
 
@@ -175,16 +190,21 @@
         self.secondButton.center = touchedPoint;
         self.thirdButton.center = touchedPoint;
         
-        [UIView animateWithDuration:0.25 animations:^(void){
+        if (!self.displayBackgroundView) {
+            self.radialMenuContainer.backgroundColor = [UIColor clearColor];
+        }
+        
+        [UIView animateWithDuration:self.animationTime animations:^(void){
             self.radialMenuContainer.alpha = 1.0;
             self.anchorView.alpha = 1.0;
         }];
         
-        NSArray *anglesArray = [self anglesArrayWithTouchedPoint:touchedPoint distance:90];
+        CGFloat distance = 90;
+        NSArray *anglesArray = [self anglesArrayWithTouchedPoint:touchedPoint distance:distance];
         
-        if (anglesArray.count > 0) [self moveButton:self.firstButton fromPoint:touchedPoint distance:90 angle:[anglesArray[0] integerValue] delay:0.1];
-        if (anglesArray.count > 1)[self moveButton:self.secondButton fromPoint:touchedPoint distance:90 angle:[anglesArray[1] integerValue] delay:0.15];
-        if (anglesArray.count > 2)[self moveButton:self.thirdButton fromPoint:touchedPoint distance:90 angle:[anglesArray[2] integerValue] delay:0.2];
+        if (anglesArray.count > 0) [self moveButton:self.firstButton fromPoint:touchedPoint distance:distance angle:[anglesArray[0] integerValue] delay:0.1];
+        if (anglesArray.count > 1)[self moveButton:self.secondButton fromPoint:touchedPoint distance:distance angle:[anglesArray[1] integerValue] delay:0.15];
+        if (anglesArray.count > 2)[self moveButton:self.thirdButton fromPoint:touchedPoint distance:distance angle:[anglesArray[2] integerValue] delay:0.2];
     }
     
     if(UIGestureRecognizerStateEnded == gestureRecognizer.state) {
@@ -195,8 +215,10 @@
             [self.delegate radialMenuDidCancel:self];
         }
         
-        [UIView animateWithDuration:0.25 animations:^(void){
-            self.radialMenuContainer.alpha = 0.0;
+        [UIView animateWithDuration:self.animationTime animations:^(void){
+            if (self.radialMenuContainer.alpha > 0.0) {
+                self.radialMenuContainer.alpha = 0.0;
+            }
             self.anchorView.alpha = 0.0;
             self.firstButton.center = self.anchorView.center;
             self.firstButton.alpha = 0.0;
@@ -240,7 +262,7 @@
     CGFloat x = distance * cosf(angle / 180.0 * M_PI);
     CGFloat y = distance * sinf(angle / 180.0 * M_PI);
     
-    [UIView animateWithDuration:0.25 delay:delay usingSpringWithDamping:0.7 initialSpringVelocity:5 options:0 animations:^ (void){
+    [UIView animateWithDuration:self.animationTime delay:delay usingSpringWithDamping:0.7 initialSpringVelocity:5 options:0 animations:^ (void){
         button.alpha = 1.0;
         button.center = CGPointMake(point.x + x, point.y + y);
     } completion:nil];
@@ -248,7 +270,7 @@
 
 - (void)scaleView:(UIView *)view value:(CGFloat)value {
     
-    [UIView animateWithDuration:0.25 delay:0.0 usingSpringWithDamping:7 initialSpringVelocity:5 options:0 animations:^(void){
+    [UIView animateWithDuration:self.animationTime delay:0.0 usingSpringWithDamping:7 initialSpringVelocity:5 options:0 animations:^(void){
         view.transform = CGAffineTransformMakeScale(value, value);
     } completion:nil];
 }
@@ -260,88 +282,78 @@
 }
 
 - (NSArray *)anglesArrayWithTouchedPoint:(CGPoint)touchedPoint distance:(NSInteger)distance {
+    
+    if (self.actionView) {
+        touchedPoint = self.pointOfView;
+    }
+    
     NSArray *positionArray = [[NSArray alloc] init];
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-//    NSString *position = @"center";
-//    positionArray = @[@30, @-90, @-210];
     
     NSInteger times = self.buttons.count;
     NSInteger step = 45;
     
     NSString *position = @"right";
-//    positionArray = @[@180, @-135, @-90];
     positionArray = [self generateArrayFrom:270 times:times step:-step];
     
     if (touchedPoint.x + distance > screenWidth) {
         position = @"right";
-//        positionArray = @[@180, @-135, @-90];
         positionArray = [self generateArrayFrom:270 times:times step:-step];
         
         if (touchedPoint.y + distance > screenHeight) {
             position = @"bottom right";
-//            positionArray = @[@180, @-135, @-90];
             positionArray = [self generateArrayFrom:270 times:times step:-step];
         }
         
         if (touchedPoint.y - distance < 60) {
             position = @"top right";
-//            positionArray = @[@180, @135, @90];
             positionArray = [self generateArrayFrom:180 times:times step:-step];
         }
     }
     
     if (touchedPoint.x - distance < 0) {
         position = @"left";
-//        positionArray = @[@0, @-45, @-90];
         positionArray = [self generateArrayFrom:0 times:times step:-step];
         
         if (touchedPoint.y + distance > screenHeight) {
             position = @"bottom left";
-//            positionArray = @[@0, @-45, @-90];
             positionArray = [self generateArrayFrom:0 times:times step:-step];
         }
         
         if (touchedPoint.y - distance < 60) {
             position = @"top left";
-//            positionArray = @[@0, @-45, @-90];
             positionArray = [self generateArrayFrom:90 times:times step:-step];
         }
     }
     
     if (touchedPoint.y - distance < 60) {
         position = @"top";
-//        positionArray = @[@0, @180, @90];
         positionArray = [self generateArrayFrom:180 times:times step:-step];
         
         if (touchedPoint.x + distance > screenWidth) {
             position = @"top right";
-//            positionArray = @[@180, @135, @90];
             positionArray = [self generateArrayFrom:180 times:times step:-step];
         }
         
         if (touchedPoint.x - distance < 0) {
             position = @"top left";
-//            positionArray = @[@0, @45, @90];
             positionArray = [self generateArrayFrom:90 times:times step:-step];
         }
     }
     
     if (touchedPoint.y + distance > screenHeight) {
         position = @"bottom";
-//        positionArray = @[@0, @-45, @-90];
         positionArray = [self generateArrayFrom:270 times:times step:-step];
         
         if (touchedPoint.x + distance > screenWidth) {
             position = @"bottom right";
-//            positionArray = @[@180, @225, @270];
             positionArray = [self generateArrayFrom:270 times:times step:-step];
         }
         
         if (touchedPoint.x - distance < 0) {
             position = @"bottom left";
-//            positionArray = @[@0, @-45, @-90];
             positionArray = [self generateArrayFrom:0 times:times step:-step];
         }
     }
