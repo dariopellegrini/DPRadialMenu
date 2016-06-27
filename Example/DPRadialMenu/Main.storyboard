@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +18,44 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOS-aP-CyG">
+                                <rect key="frame" x="178" y="178" width="244" height="244"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long press here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA7-lm-9x5">
+                                        <rect key="frame" x="54" y="110" width="137" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.01026766514" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="Vat-to-fLd"/>
+                                    <constraint firstAttribute="width" secondItem="wOS-aP-CyG" secondAttribute="height" multiplier="1:1" id="lpq-2g-kwy"/>
+                                    <constraint firstItem="jA7-lm-9x5" firstAttribute="centerY" secondItem="wOS-aP-CyG" secondAttribute="centerY" id="tSy-nd-GtF"/>
+                                    <constraint firstItem="jA7-lm-9x5" firstAttribute="centerX" secondItem="wOS-aP-CyG" secondAttribute="centerX" id="zbh-mH-tVb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDy-jz-qqn">
+                                <rect key="frame" x="20" y="557" width="560" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wOS-aP-CyG" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="MTI-OL-WHY"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="RDy-jz-qqn" secondAttribute="bottom" constant="20" id="PD4-nM-TVm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RDy-jz-qqn" secondAttribute="trailing" id="RhA-ue-44F"/>
+                            <constraint firstItem="wOS-aP-CyG" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="UUY-2s-740"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="RDy-jz-qqn" secondAttribute="leading" id="f22-cE-7e8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="redView" destination="wOS-aP-CyG" id="B0R-ed-QYn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

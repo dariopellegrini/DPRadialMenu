@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187219ED3A4AC303341863CD0BEDB6C3 /* DPRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4303B99AB7F04C98F7B2CB684B4BAC5B /* DPRadialMenu.m */; };
+		2D58F9120F01A3071EE7DD34EBC97F0A /* DPRadialMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7111C2395F20EF64C834C5ECF009EE1C /* DPRadialMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369E9ADFF1C2123B23BE81F0F49D4BC4 /* Pods-DPRadialMenu_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE51D8E7D51155A3ADD77B6DD5D3A54 /* Pods-DPRadialMenu_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A34F998259D714A6C0A0D5905C77025 /* DPRadialMenuDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A60A05C1154A2AB67E00CDD3945A8C9 /* DPRadialMenuDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C3A68A0D425DBAAD3736C68777DCE4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8E627422E78D9246AD867C3FCC6263E2 /* Pods-DPRadialMenu_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 112A2181925913672AE045C2D4BBEEDD /* Pods-DPRadialMenu_Example-dummy.m */; };
+		9290B116EAC2FD17E972D4B5C9B87F2E /* DPRadialMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CB782D1283D87EAEF37C6E8F730BB /* DPRadialMenu-dummy.m */; };
+		BEDB59183077137CD0F9AFF00BB9F175 /* Pods-DPRadialMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD40E294DFC97921C9F7467EDEF5026 /* Pods-DPRadialMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB836E76507B74252156395CCF4C9BBD /* DPRadialMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9510639CB2312ED4049F95853973B14B /* DPRadialMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCF03E4773498FBA68452018F3EAFB38 /* Pods-DPRadialMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D993968F6908824E6EBD8FFA1859C /* Pods-DPRadialMenu_Tests-dummy.m */; };
+		E8705B13F915B0979C38896C7029A951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F1915315EB73FDDE8FCB73DE06A2F3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C38CEB7BA1819CD64DCA598F55E98A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CCCF7B431B8EC42AAD7487302A40C39;
+			remoteInfo = DPRadialMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AE51D8E7D51155A3ADD77B6DD5D3A54 /* Pods-DPRadialMenu_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DPRadialMenu_Example-umbrella.h"; sourceTree = "<group>"; };
+		0C92E5D74F616C39F2E604606688384D /* Pods-DPRadialMenu_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DPRadialMenu_Example.modulemap"; sourceTree = "<group>"; };
+		0CD07493EE48346D43F82814DEB85157 /* Pods-DPRadialMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPRadialMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		112A2181925913672AE045C2D4BBEEDD /* Pods-DPRadialMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DPRadialMenu_Example-dummy.m"; sourceTree = "<group>"; };
+		2070910BE040CD51ED891E03EFD893B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235FA92A3B13DE19539FA06F59595E32 /* Pods-DPRadialMenu_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DPRadialMenu_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2390EE99E0AD1E010A224960A0DDD932 /* DPRadialMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DPRadialMenu.xcconfig; sourceTree = "<group>"; };
+		298BB089EC0E5F87E2E6683BCD6EC81A /* Pods-DPRadialMenu_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DPRadialMenu_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2B41C6DF9D3092C3C6D79ABC7341E524 /* DPRadialMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DPRadialMenu.modulemap; sourceTree = "<group>"; };
+		3B7644739702897D594545005ECEA503 /* Pods-DPRadialMenu_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DPRadialMenu_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4303B99AB7F04C98F7B2CB684B4BAC5B /* DPRadialMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DPRadialMenu.m; sourceTree = "<group>"; };
+		48B374237EDE122499041D854FDC2532 /* DPRadialMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DPRadialMenu-prefix.pch"; sourceTree = "<group>"; };
+		4DD32E8A60591448C620EBB96CDF748E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B401A57F5377AB4519A6757806E5AF4 /* Pods-DPRadialMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPRadialMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7111C2395F20EF64C834C5ECF009EE1C /* DPRadialMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DPRadialMenu-umbrella.h"; sourceTree = "<group>"; };
+		74CB007DDE3C694FDE15D7E0B13CECB9 /* Pods-DPRadialMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPRadialMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7A60A05C1154A2AB67E00CDD3945A8C9 /* DPRadialMenuDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DPRadialMenuDelegate.h; sourceTree = "<group>"; };
+		8777417CA4D86DE35DF27F4B1D6BEE2F /* Pods-DPRadialMenu_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DPRadialMenu_Example-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9510639CB2312ED4049F95853973B14B /* DPRadialMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DPRadialMenu.h; sourceTree = "<group>"; };
+		9E882FFB99A6E51F86197D62334AC745 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E9E0C733D357743B9E65A861B5917A /* Pods-DPRadialMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DPRadialMenu_Tests.modulemap"; sourceTree = "<group>"; };
+		A2DAD7BAA1498E8E94AE1E0B2EB9551F /* Pods-DPRadialMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPRadialMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A833D4B3B5F58A00E5F46D243351F262 /* DPRadialMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPRadialMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD40E294DFC97921C9F7467EDEF5026 /* Pods-DPRadialMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DPRadialMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AC69F0E8FA83A7E1AC64AB82C996A544 /* Pods-DPRadialMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPRadialMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B16CB782D1283D87EAEF37C6E8F730BB /* DPRadialMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DPRadialMenu-dummy.m"; sourceTree = "<group>"; };
+		BE6D993968F6908824E6EBD8FFA1859C /* Pods-DPRadialMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DPRadialMenu_Tests-dummy.m"; sourceTree = "<group>"; };
+		C7B10E90152F05409BBFE65683969BFC /* Pods_DPRadialMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPRadialMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FFEBB3F3E430B5095D1B77B6D94CB5 /* Pods-DPRadialMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPRadialMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7744CBA3AC08BB0D51DCED1774CCF63 /* Pods-DPRadialMenu_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DPRadialMenu_Tests-resources.sh"; sourceTree = "<group>"; };
+		D8A714D3921950B1E3A3AB7902B0DCAA /* Pods_DPRadialMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPRadialMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DC7D1B93C0ED0462D432E68CD42C6A /* Pods-DPRadialMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DPRadialMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D0FBDD04CDEF4D30118ED6EA943A973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3A68A0D425DBAAD3736C68777DCE4D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80BA5A49EE9306870BF2FBFE8506D58D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8705B13F915B0979C38896C7029A951 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F3BACAC73DC6435B1425916F12950D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1915315EB73FDDE8FCB73DE06A2F3FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B4B755EBE94A2A58C3C9D7AA40A87CA /* Pods-DPRadialMenu_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4DD32E8A60591448C620EBB96CDF748E /* Info.plist */,
+				0C92E5D74F616C39F2E604606688384D /* Pods-DPRadialMenu_Example.modulemap */,
+				235FA92A3B13DE19539FA06F59595E32 /* Pods-DPRadialMenu_Example-acknowledgements.markdown */,
+				A2DAD7BAA1498E8E94AE1E0B2EB9551F /* Pods-DPRadialMenu_Example-acknowledgements.plist */,
+				112A2181925913672AE045C2D4BBEEDD /* Pods-DPRadialMenu_Example-dummy.m */,
+				3B7644739702897D594545005ECEA503 /* Pods-DPRadialMenu_Example-frameworks.sh */,
+				8777417CA4D86DE35DF27F4B1D6BEE2F /* Pods-DPRadialMenu_Example-resources.sh */,
+				0AE51D8E7D51155A3ADD77B6DD5D3A54 /* Pods-DPRadialMenu_Example-umbrella.h */,
+				74CB007DDE3C694FDE15D7E0B13CECB9 /* Pods-DPRadialMenu_Example.debug.xcconfig */,
+				C9FFEBB3F3E430B5095D1B77B6D94CB5 /* Pods-DPRadialMenu_Example.release.xcconfig */,
+			);
+			name = "Pods-DPRadialMenu_Example";
+			path = "Target Support Files/Pods-DPRadialMenu_Example";
+			sourceTree = "<group>";
+		};
+		2B71A771EFB2E53E93D78D5446219B29 /* DPRadialMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9E101D4D40EA9B9E3ED06A8C9BE49C47 /* Classes */,
+			);
+			path = DPRadialMenu;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FF375A042328B2784FCE42973D09400 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B4B755EBE94A2A58C3C9D7AA40A87CA /* Pods-DPRadialMenu_Example */,
+				F8A952DBB590C9D91D7D4BA5C83D2E21 /* Pods-DPRadialMenu_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				EA51E9393D46BC66682274B86368EF4B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E795354D9CCFE4210FB1B16834DEE930 /* Products */,
+				5FF375A042328B2784FCE42973D09400 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9E101D4D40EA9B9E3ED06A8C9BE49C47 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9510639CB2312ED4049F95853973B14B /* DPRadialMenu.h */,
+				4303B99AB7F04C98F7B2CB684B4BAC5B /* DPRadialMenu.m */,
+				7A60A05C1154A2AB67E00CDD3945A8C9 /* DPRadialMenuDelegate.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AE26B9D9F44F496006A95901B8CA9582 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B41C6DF9D3092C3C6D79ABC7341E524 /* DPRadialMenu.modulemap */,
+				2390EE99E0AD1E010A224960A0DDD932 /* DPRadialMenu.xcconfig */,
+				B16CB782D1283D87EAEF37C6E8F730BB /* DPRadialMenu-dummy.m */,
+				48B374237EDE122499041D854FDC2532 /* DPRadialMenu-prefix.pch */,
+				7111C2395F20EF64C834C5ECF009EE1C /* DPRadialMenu-umbrella.h */,
+				2070910BE040CD51ED891E03EFD893B2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DPRadialMenu";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E795354D9CCFE4210FB1B16834DEE930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A833D4B3B5F58A00E5F46D243351F262 /* DPRadialMenu.framework */,
+				C7B10E90152F05409BBFE65683969BFC /* Pods_DPRadialMenu_Example.framework */,
+				D8A714D3921950B1E3A3AB7902B0DCAA /* Pods_DPRadialMenu_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA51E9393D46BC66682274B86368EF4B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4FB2375D513D1B1A545DD3EEE0F52CB /* DPRadialMenu */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F4FB2375D513D1B1A545DD3EEE0F52CB /* DPRadialMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2B71A771EFB2E53E93D78D5446219B29 /* DPRadialMenu */,
+				AE26B9D9F44F496006A95901B8CA9582 /* Support Files */,
+			);
+			name = DPRadialMenu;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F8A952DBB590C9D91D7D4BA5C83D2E21 /* Pods-DPRadialMenu_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9E882FFB99A6E51F86197D62334AC745 /* Info.plist */,
+				A1E9E0C733D357743B9E65A861B5917A /* Pods-DPRadialMenu_Tests.modulemap */,
+				E5DC7D1B93C0ED0462D432E68CD42C6A /* Pods-DPRadialMenu_Tests-acknowledgements.markdown */,
+				6B401A57F5377AB4519A6757806E5AF4 /* Pods-DPRadialMenu_Tests-acknowledgements.plist */,
+				BE6D993968F6908824E6EBD8FFA1859C /* Pods-DPRadialMenu_Tests-dummy.m */,
+				298BB089EC0E5F87E2E6683BCD6EC81A /* Pods-DPRadialMenu_Tests-frameworks.sh */,
+				D7744CBA3AC08BB0D51DCED1774CCF63 /* Pods-DPRadialMenu_Tests-resources.sh */,
+				ABD40E294DFC97921C9F7467EDEF5026 /* Pods-DPRadialMenu_Tests-umbrella.h */,
+				AC69F0E8FA83A7E1AC64AB82C996A544 /* Pods-DPRadialMenu_Tests.debug.xcconfig */,
+				0CD07493EE48346D43F82814DEB85157 /* Pods-DPRadialMenu_Tests.release.xcconfig */,
+			);
+			name = "Pods-DPRadialMenu_Tests";
+			path = "Target Support Files/Pods-DPRadialMenu_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1467BD3F176CC0617EA0095D8F9A4FD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D58F9120F01A3071EE7DD34EBC97F0A /* DPRadialMenu-umbrella.h in Headers */,
+				CB836E76507B74252156395CCF4C9BBD /* DPRadialMenu.h in Headers */,
+				6A34F998259D714A6C0A0D5905C77025 /* DPRadialMenuDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE78AFDEDDCE3E884C1C93B22C30024 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369E9ADFF1C2123B23BE81F0F49D4BC4 /* Pods-DPRadialMenu_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04890A82D2315DF38885587351F5163 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDB59183077137CD0F9AFF00BB9F175 /* Pods-DPRadialMenu_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2CCCF7B431B8EC42AAD7487302A40C39 /* DPRadialMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4BAB1AF86E12868651056129F42D7FF /* Build configuration list for PBXNativeTarget "DPRadialMenu" */;
+			buildPhases = (
+				B2BFBB91EA2CAFD83D068DA9AEC88E97 /* Sources */,
+				80BA5A49EE9306870BF2FBFE8506D58D /* Frameworks */,
+				1467BD3F176CC0617EA0095D8F9A4FD6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DPRadialMenu;
+			productName = DPRadialMenu;
+			productReference = A833D4B3B5F58A00E5F46D243351F262 /* DPRadialMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2BEB0EC250703F0D783213E1FC769DE /* Pods-DPRadialMenu_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9AEFDA05D3E9C65ADA249B48C927F54 /* Build configuration list for PBXNativeTarget "Pods-DPRadialMenu_Example" */;
+			buildPhases = (
+				638ADF3FA689105B21446D27E87DE8F7 /* Sources */,
+				2D0FBDD04CDEF4D30118ED6EA943A973 /* Frameworks */,
+				7BE78AFDEDDCE3E884C1C93B22C30024 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				411903E233A08793E1699C6EB4C28763 /* PBXTargetDependency */,
+			);
+			name = "Pods-DPRadialMenu_Example";
+			productName = "Pods-DPRadialMenu_Example";
+			productReference = C7B10E90152F05409BBFE65683969BFC /* Pods_DPRadialMenu_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF0325918D78E23391B657389E390756 /* Pods-DPRadialMenu_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE247128F9807DC63AE8669B5E1DCEEE /* Build configuration list for PBXNativeTarget "Pods-DPRadialMenu_Tests" */;
+			buildPhases = (
+				60A68CBE981988DE77DD411A49234E0A /* Sources */,
+				92F3BACAC73DC6435B1425916F12950D /* Frameworks */,
+				D04890A82D2315DF38885587351F5163 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DPRadialMenu_Tests";
+			productName = "Pods-DPRadialMenu_Tests";
+			productReference = D8A714D3921950B1E3A3AB7902B0DCAA /* Pods_DPRadialMenu_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E795354D9CCFE4210FB1B16834DEE930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CCCF7B431B8EC42AAD7487302A40C39 /* DPRadialMenu */,
+				A2BEB0EC250703F0D783213E1FC769DE /* Pods-DPRadialMenu_Example */,
+				EF0325918D78E23391B657389E390756 /* Pods-DPRadialMenu_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60A68CBE981988DE77DD411A49234E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF03E4773498FBA68452018F3EAFB38 /* Pods-DPRadialMenu_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638ADF3FA689105B21446D27E87DE8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E627422E78D9246AD867C3FCC6263E2 /* Pods-DPRadialMenu_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2BFBB91EA2CAFD83D068DA9AEC88E97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9290B116EAC2FD17E972D4B5C9B87F2E /* DPRadialMenu-dummy.m in Sources */,
+				187219ED3A4AC303341863CD0BEDB6C3 /* DPRadialMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		411903E233A08793E1699C6EB4C28763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DPRadialMenu;
+			target = 2CCCF7B431B8EC42AAD7487302A40C39 /* DPRadialMenu */;
+			targetProxy = 0C38CEB7BA1819CD64DCA598F55E98A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29BEA7C70B30065ED4A62B32BFD09785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC69F0E8FA83A7E1AC64AB82C996A544 /* Pods-DPRadialMenu_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DPRadialMenu_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPRadialMenu_Tests/Pods-DPRadialMenu_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DPRadialMenu_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51B13DF102201275D8761F56014660C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2390EE99E0AD1E010A224960A0DDD932 /* DPRadialMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DPRadialMenu/DPRadialMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DPRadialMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DPRadialMenu/DPRadialMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DPRadialMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BA3E148ECBD2B7F2EECB0F966A5F2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CB007DDE3C694FDE15D7E0B13CECB9 /* Pods-DPRadialMenu_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DPRadialMenu_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPRadialMenu_Example/Pods-DPRadialMenu_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DPRadialMenu_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D51F4BE3E181E9EE95D11DAA3127F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2390EE99E0AD1E010A224960A0DDD932 /* DPRadialMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DPRadialMenu/DPRadialMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DPRadialMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DPRadialMenu/DPRadialMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DPRadialMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9606512ED88AAA533CA04D0235FC391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FFEBB3F3E430B5095D1B77B6D94CB5 /* Pods-DPRadialMenu_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DPRadialMenu_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPRadialMenu_Example/Pods-DPRadialMenu_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DPRadialMenu_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D86EF541360D78B2FE88EED26D541D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD07493EE48346D43F82814DEB85157 /* Pods-DPRadialMenu_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DPRadialMenu_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPRadialMenu_Tests/Pods-DPRadialMenu_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DPRadialMenu_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4BAB1AF86E12868651056129F42D7FF /* Build configuration list for PBXNativeTarget "DPRadialMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B13DF102201275D8761F56014660C7 /* Debug */,
+				8D51F4BE3E181E9EE95D11DAA3127F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9AEFDA05D3E9C65ADA249B48C927F54 /* Build configuration list for PBXNativeTarget "Pods-DPRadialMenu_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BA3E148ECBD2B7F2EECB0F966A5F2AE /* Debug */,
+				C9606512ED88AAA533CA04D0235FC391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE247128F9807DC63AE8669B5E1DCEEE /* Build configuration list for PBXNativeTarget "Pods-DPRadialMenu_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BEA7C70B30065ED4A62B32BFD09785 /* Debug */,
+				D86EF541360D78B2FE88EED26D541D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

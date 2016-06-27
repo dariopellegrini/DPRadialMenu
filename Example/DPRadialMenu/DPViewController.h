@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+#import <DPRadialMenu/DPRadialMenu.h>
 
 @interface DPViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIView *redView;
 @end

@@ -1,0 +1,16 @@
+PODS:
+  - DPRadialMenu (0.1.0)
+
+DEPENDENCIES:
+  - DPRadialMenu (from `../`)
+
+EXTERNAL SOURCES:
+  DPRadialMenu:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DPRadialMenu: 67d713ed0c0bed76048de96d811195aa827bfa72
+
+PODFILE CHECKSUM: 2a43384add1d212507e1e8562d949e09a9352ff4
+
+COCOAPODS: 1.0.1

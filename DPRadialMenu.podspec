@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DPRadialMenu'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DPRadialMenu.'
+  s.summary          = 'A simple from 1 to 3 radial menu, to display radial button inside a view after a long press on that'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/DPRadialMenu'
+  s.homepage         = 'https://github.com/dariopellegrini/DPRadialMenu'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dario Pellegrini' => 'pellegrini.dario.1303@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/DPRadialMenu.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dariopellegrini/DPRadialMenu.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

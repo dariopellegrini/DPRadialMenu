@@ -1,0 +1,6 @@
+framework module DPRadialMenu {
+  umbrella header "DPRadialMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
