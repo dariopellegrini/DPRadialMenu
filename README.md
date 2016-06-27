@@ -34,8 +34,8 @@ After that import in your code files using
 
 If you are using Swift you have to create a bridging header and import DPRadialMenu.h there.
 
-## Usare
-
+## Usage
+At the moment the maximum number of button is 3 and the minimum is 1.
 In order to use this you need a similar code:
 
 ```objective-c

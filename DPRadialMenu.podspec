@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DPRadialMenu'
   s.version          = '0.0.1'
-  s.summary          = 'A simple from 1 to 3 buttons radial menu, to display radial button inside a view after a long press on that'
+  s.summary          = 'A simple from 1 to 3 buttons radial menu, to display radial button inside a view after a long press on that.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
