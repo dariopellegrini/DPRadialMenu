@@ -18,11 +18,12 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Create your radial menu with a maximum of 3 buttons. You can add your own button and insert it inside a view with a single line of code.
+Create your 3 buttons radial menu. You can add your own buttons and insert them inside a view with a single line of code.
+
                        DESC
 
   s.homepage         = 'https://github.com/dariopellegrini/DPRadialMenu'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/screen/screen1.png', 'https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/screen/screen2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dario Pellegrini' => 'pellegrini.dario.1303@gmail.com' }
   s.source           = { :git => 'https://github.com/dariopellegrini/DPRadialMenu.git', :tag => s.version.to_s }

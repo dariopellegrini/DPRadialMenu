@@ -10,6 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS 8.0+
 
 ## Installation
 
@@ -19,6 +20,14 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "DPRadialMenu"
 ```
+
+After that import in your code files using 
+
+```
+#import <DPRadialMenu/DPRadialMenu.h>
+```
+
+If you are using Swift you have to create a bridging header and import DPRadialMenu.h there.
 
 ## Author
 

@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
     
+    // Creating radial menu
     DPRadialMenu *radialMenu = [[DPRadialMenu alloc] init];
     DPRadialMenu *radialMenuSmall = [[DPRadialMenu alloc] init];
     
@@ -41,8 +42,13 @@
     [b5 setImage:[UIImage imageNamed:@"google_plus"] forState:UIControlStateNormal];
     [b6 setImage:[UIImage imageNamed:@"linked_in"] forState:UIControlStateNormal];
     
+    // Configuring radial menu with buttons
     [radialMenu configureWithButtons:@[b1, b2, b3] view:self.view delegate:self];
+    
+    // Display or not the fade vuew on the background
     radialMenu.displayBackgroundView = YES;
+    
+    // Animations time
     radialMenu.animationTime = 0.5;
     
     [radialMenuSmall configureWithButtons:@[b4, b5, b6] view:self.redView delegate:self];
