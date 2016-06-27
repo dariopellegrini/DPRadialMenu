@@ -7,8 +7,7 @@
 
 Radial menu written in Objective-C
 
-![alt tag](https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/screen/animation.gif)
-![alt tag](https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/screen/screen1.png)
+![alt tag](https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/Screen/animation.gif)
 ![alt tag](https://raw.githubusercontent.com/dariopellegrini/DPRadialMenu/master/screen/screen2.png)
 
 ## Example
