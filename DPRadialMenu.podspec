@@ -26,7 +26,7 @@ Create your radial menu with a maximum of 3 buttons. You can add your own button
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dario Pellegrini' => 'pellegrini.dario.1303@gmail.com' }
   s.source           = { :git => 'https://github.com/dariopellegrini/DPRadialMenu.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'https://twitter.com/dario_p89'
 
   s.ios.deployment_target = '8.0'
 
