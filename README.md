@@ -40,7 +40,6 @@ In order to use this you need a similar code:
 
 ```objective-c
 DPRadialMenu *radialMenu = [[DPRadialMenu alloc] init];
-DPRadialMenu *radialMenuSmall = [[DPRadialMenu alloc] init];
 
 UIButton *b1 = [[UIButton alloc] init];
 UIButton *b2 = [[UIButton alloc] init];
