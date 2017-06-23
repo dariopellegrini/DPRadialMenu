@@ -1,6 +1,5 @@
 # DPRadialMenu
 
-[![CI Status](http://img.shields.io/travis/Dario Pellegrini/DPRadialMenu.svg?style=flat)](https://travis-ci.org/Dario Pellegrini/DPRadialMenu)
 [![Version](https://img.shields.io/cocoapods/v/DPRadialMenu.svg?style=flat)](http://cocoapods.org/pods/DPRadialMenu)
 [![License](https://img.shields.io/cocoapods/l/DPRadialMenu.svg?style=flat)](http://cocoapods.org/pods/DPRadialMenu)
 [![Platform](https://img.shields.io/cocoapods/p/DPRadialMenu.svg?style=flat)](http://cocoapods.org/pods/DPRadialMenu)
