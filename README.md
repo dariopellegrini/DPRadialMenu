@@ -98,7 +98,7 @@ To customize button simply add buttons already customized in constructor.
 Here are other simple customizations:
 
 ```objective-c
-// Display or not the fade vuew on the background
+// Display or not the fade view on the background
 radialMenu.displayBackgroundView = YES;
 
 // Animations time
